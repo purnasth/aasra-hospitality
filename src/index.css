@@ -1,6 +1,16 @@
-@font-face {
+/* @font-face {
   font-family: 'Purna Title';
   src: url('./assets/fonts/Bagera.otf') format('opentype');
+} */
+
+/* @font-face {
+  font-family: 'Purna Title';
+  src: url('./assets/fonts/Aiguilette.otf') format('opentype');
+} */
+
+@font-face {
+  font-family: 'Purna Title';
+  src: url('./assets/fonts/chaviera.otf') format('opentype');
 }
 
 @tailwind base;
@@ -25,8 +35,12 @@
 
   main,
   section {
-    @apply font-body bg-light;
+    @apply font-body;
   }
+
+  /* body {
+    @apply bg-[url("https://laviehospitality.com.np/wp-content/themes/starter/imagio_s/img/placeholder/Back00.webp")] bg-fixed bg-cover bg-center bg-no-repeat bg-light bg-opacity-0;
+  } */
 
   .navlink,
   h1,
@@ -56,17 +70,15 @@
   }
 
   .navlink {
-    @apply transition-300 border-logo-maroon/20 bg-logo-maroon/10 hover:bg-logo-yellow/10 inline-flex w-full items-center justify-center border p-8 text-center text-3xl font-extrabold capitalize tracking-wider text-dark group-hover:font-bold group-hover:tracking-widest;
+    @apply transition-300 inline-flex items-center justify-between w-full text-5xl capitalize text-dark group-hover:tracking-wider;
   }
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-      hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%)
-      hue-rotate(327deg) brightness(96%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
   }
 
   .transition-300 {
@@ -80,4 +92,31 @@
   .transition-1000 {
     @apply transition-all duration-1000;
   }
+}
+
+main {
+  position: relative;
+}
+
+main:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url('https://laviehospitality.com.np/wp-content/themes/starter/imagio_s/img/placeholder/Back00.webp');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -50;
+}
+
+ul:hover li:not(:hover) {
+  opacity: .6;
+  transition: all 0.3s;
+  filter: blur(1px);
 }

@@ -6,13 +6,13 @@ module.exports = {
       colors: {
         dark: '#000',
         // light: '#fffbf3',
-        light: '#fff5e4',
+        light: '#e2e2e2',
         'logo-yellow': '#FFCE35',
         'logo-maroon': '#981C20',
         'logo-green': '#346833',
       },
       fontFamily: {
-        title: ['"Bagera"', 'Georgia', 'Cambria', 'serif'],
+        title: ['"Chaviera"','Aiguilette', 'Georgia', 'Cambria', 'serif'],
         body: ['"Syne"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       screens: {
