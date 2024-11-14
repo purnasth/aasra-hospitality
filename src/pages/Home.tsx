@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../components/About';
 import MasterSlider from '../components/ui/MasterSlider';
+import GuestBook from '../components/ui/GuestBook';
 
 const slides = [
   {
@@ -37,21 +38,32 @@ const Home: React.FC = () => {
         />
         <div className="overlay pointer-events-none absolute inset-0 -z-0 bg-gradient-to-b from-dark/40 to-transparent"></div>
       </main>
-      {/* <main className="flex h-screen w-full items-center justify-center flex-col gap-12">
-        <h1 className="text-center text-8xl capitalize">Aasra Hospitality</h1>
-        <p className="text-center text-base max-w-2xl">
+      <About />
+      <main className="flex w-full flex-col items-center justify-center gap-12 border-t border-dark/20">
+        <h1 className="text-center text-8xl max-w-5xl leading-tight">
+          Aasra Hospitality leading the Way in the Hospitality Industry
+          Worldwide
+        </h1>
+        <p className="max-w-2xl text-center text-base">
+          Founded by "Maninderjit Singh Bath" & "Ajayapal Singh Bath" in 2000.
           Aasra Hospitality is a privately owned, innovative hotel development
           and hospitality management company. We manage a portfolio of hotels
           across the United States and provide investor opportunities, hotel
           development services, hotel management services, and hospitality
           career opportunities to our partners and associates.
         </p>
-      </main> */}
-      <About />
+        <p className="max-w-2xl text-center text-base">
+          Headquartered in Redding, CA our corporate staff provides complete
+          services in both business development and hotel management. We employ
+          over 600 associates at hotels throughout the United States, located in
+          popular destinations, including California, Oregon, Washington,
+          Alaska, and Utah.
+        </p>
+      </main>
 
       <hr className="border-dark/20" />
 
-      <main className="bg-light px-0">
+      <main className="bg-light px-0 pb-0">
         <div className="container mb-16 text-center">
           <span className="text-xl">Aasra means 'King of Fame'</span>
           <p className="mx-auto mt-6 max-w-4xl opacity-50">
@@ -62,8 +74,14 @@ const Home: React.FC = () => {
           </p>
         </div>
 
-        <MasterSlider slides={slides} hasContent sizeClassName="h-screen w-full object-cover" />
+        <MasterSlider
+          slides={slides}
+          hasContent
+          sizeClassName="h-screen w-full object-cover"
+        />
       </main>
+
+      <GuestBook />
     </>
   );
 };

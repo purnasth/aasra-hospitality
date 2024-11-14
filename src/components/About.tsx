@@ -2,9 +2,9 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <main className="pt-0">
+    <main className="pt-0 bg-light">
       <div className="grid grid-cols-1 content-center gap-32 md:grid-cols-3">
-        <div className="mt-36 hidden space-y-24 pt-64 md:block">
+        <div className="mt-32 hidden space-y-24 pt-64 md:block">
           <div className="flex items-end justify-end">
             <img
               src="https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547941225922-SNJE6B34RVWFT80MHOG3/bed-bedroom-cozy-164595.jpg?format=2500w"
@@ -28,7 +28,7 @@ const About: React.FC = () => {
           </div>
         </div>
         <div className="sticky top-0 flex max-h-fit flex-col items-center gap-12 text-center">
-          <div className="bottom-0 h-10 w-px bg-dark/50 md:h-40"></div>
+          <div className="bottom-0 h-10 w-px bg-dark/0 md:h-40"></div>
           <h3 className="mt-0 text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-6xl lg:leading-snug xl:text-8xl 2xl:text-8xl 2xl:leading-normal">
             Aasra Hospitality
           </h3>
@@ -40,7 +40,7 @@ const About: React.FC = () => {
             career opportunities to our partners and associates.
           </p>
         </div>
-        <div className="mt-36 hidden space-y-24 pt-64 md:block">
+        <div className="mt-32 hidden space-y-24 pt-64 md:block">
           <div className="flex items-end justify-end">
             <img
               src="https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547941225922-SNJE6B34RVWFT80MHOG3/bed-bedroom-cozy-164595.jpg?format=2500w"

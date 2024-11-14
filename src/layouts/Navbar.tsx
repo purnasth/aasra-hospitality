@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
       >
         <button
           onClick={toggleNav}
-          className="pointer-events-auto flex cursor-pointer items-center gap-2 border border-light/50 px-6 py-2 text-light transition-all duration-1000"
+          className="pointer-events-auto flex cursor-pointer items-center gap-2 border border-light/50 px-6 py-2 text-light backdrop-blur-sm transition-all duration-1000 hover:bg-dark/50"
           title="Menu"
           aria-label="Menu"
           type="button"
