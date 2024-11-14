@@ -2,6 +2,8 @@ import React from 'react';
 import About from '../components/About';
 import MasterSlider from '../components/ui/MasterSlider';
 import GuestBook from '../components/ui/GuestBook';
+import Services from '../components/Services';
+import Nearby from '../components/ui/Nearby';
 
 const slides = [
   {
@@ -40,7 +42,7 @@ const Home: React.FC = () => {
       </main>
       <About />
       <main className="flex w-full flex-col items-center justify-center gap-12 border-t border-dark/20">
-        <h1 className="text-center text-8xl max-w-5xl leading-tight">
+        <h1 className="max-w-5xl text-center text-8xl leading-tight">
           Aasra Hospitality leading the Way in the Hospitality Industry
           Worldwide
         </h1>
@@ -82,6 +84,20 @@ const Home: React.FC = () => {
       </main>
 
       <GuestBook />
+      <Services />
+
+      <main className="bg-light px-0 pb-0">
+        <div className="container mb-16 text-center">
+          <span className="text-xl">Reach to Aasra Hospitality</span>
+          <p className="mx-auto mt-6 max-w-4xl opacity-50">
+            We are available 24/7 to help you. You can reach us by phone, email,
+            or by visiting our office. We are located in Redding, CA. We are
+            always ready to help you. Get direction to our office by clicking on
+            the location below.
+          </p>
+        </div>
+        <Nearby />
+      </main>
     </>
   );
 };
