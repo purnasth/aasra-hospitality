@@ -10,17 +10,19 @@ import {
 import Navbar from './layouts/Navbar';
 import Home from './pages/Home';
 import useLenisScroll from './hooks/useLenisScroll';
+import WhatsApp from './components/ui/WhatsApp';
 
 const App: React.FC = () => {
   useLenisScroll();
   return (
     <>
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Navbar />
+        <WhatsApp />
       </Router>
     </>
   );

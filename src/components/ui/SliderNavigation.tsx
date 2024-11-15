@@ -15,11 +15,11 @@ const SliderNavigation: React.FC<SliderNavigationProps> = ({
   onPrev,
 }) => {
   return (
-    <div className="flex items-center gap-8">
+    <div className="z-10 flex items-center gap-8 text-white">
       <button onClick={onPrev} aria-label="Previous" className="text-4xl">
         &larr;
       </button>
-      <span className="text-2xl uppercase">
+      <span className="font-sans text-lg uppercase">
         {currentIndex + 1} / {totalItems}
       </span>
       <button onClick={onNext} aria-label="Next" className="text-4xl">
