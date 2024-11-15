@@ -9,8 +9,10 @@ import {
 
 import Navbar from './layouts/Navbar';
 import Home from './pages/Home';
+import useLenisScroll from './hooks/useLenisScroll';
 
 const App: React.FC = () => {
+  useLenisScroll();
   return (
     <>
       <Router>
