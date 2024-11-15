@@ -4,28 +4,23 @@ import MasterSlider from '../components/ui/MasterSlider';
 import GuestBook from '../components/ui/GuestBook';
 import Services from '../components/Services';
 import Nearby from '../components/ui/Nearby';
+import Brands from '../components/Brands';
 
 const slides = [
   {
-    title: 'Aasra Hospitality',
-    description:
-      'Aasra Hospitality is a privately owned, innovative hotel development and hospitality management company. We manage a portfolio of hotels across the United States and provide investor opportunities, hotel development services, hotel management services, and hospitality career opportunities to our partners and associates.',
+    title: 'Commitment. Reliability. Follow through.',
     image:
       'https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547940792567-3OCRBEXVKTU1UYOEG8PD/image1.JPG?format=2500w',
   },
   {
-    title: 'Aasra Hospitality',
-    description:
-      'Aasra Hospitality is a privately owned, innovative hotel development and hospitality management company. We manage a portfolio of hotels across the United States and provide investor opportunities, hotel development services, hotel management services, and hospitality career opportunities to our partners and associates.',
+    title: 'Setting the standard in hospitality management',
     image:
-      'https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547940792567-3OCRBEXVKTU1UYOEG8PD/image1.JPG?format=2500w',
+      'https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547941225922-SNJE6B34RVWFT80MHOG3/bed-bedroom-cozy-164595.jpg?format=2500w',
   },
   {
-    title: 'Aasra Hospitality',
-    description:
-      'Aasra Hospitality is a privately owned, innovative hotel development and hospitality management company. We manage a portfolio of hotels across the United States and provide investor opportunities, hotel development services, hotel management services, and hospitality career opportunities to our partners and associates.',
+    title: 'Driven by teamwork and innovation',
     image:
-      'https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547940792567-3OCRBEXVKTU1UYOEG8PD/image1.JPG?format=2500w',
+      'https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547941521086-DOEJIY920IJFTSONER8R/adult-architect-blueprint-416405.jpg?format=2500w',
   },
 ];
 
@@ -36,7 +31,7 @@ const Home: React.FC = () => {
         <img
           src="https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547940792567-3OCRBEXVKTU1UYOEG8PD/image1.JPG?format=2500w"
           alt="Aasra Hospitality"
-          className="-z-10 h-[110vh] w-full object-cover object-top"
+          className="-z-10 h-[110vh] w-full object-cover object-top contrast-125"
         />
         <div className="overlay pointer-events-none absolute inset-0 -z-0 bg-gradient-to-b from-dark/40 to-transparent"></div>
       </main>
@@ -79,12 +74,15 @@ const Home: React.FC = () => {
         <MasterSlider
           slides={slides}
           hasContent
-          sizeClassName="h-screen w-full object-cover"
+          sizeClassName="h-[110vh] w-full object-cover"
+          headingClassName="text-white text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-7xl xl:text-8xl lg:leading-snug max-w-5xl mx-auto [text-shadow:_0_1px_10px_#00000080]"
         />
       </main>
 
       <GuestBook />
       <Services />
+
+      <Brands />
 
       <main className="bg-light px-0 pb-0">
         <div className="container mb-16 text-center">

@@ -19,6 +19,7 @@ interface MasterSliderProps {
   speed?: number;
   delay?: number;
   sizeClassName?: string;
+  headingClassName?: string;
 }
 
 const MasterSlider: React.FC<MasterSliderProps> = ({
@@ -26,8 +27,9 @@ const MasterSlider: React.FC<MasterSliderProps> = ({
   hasContent = false,
   autoplay = true,
   speed = 2000,
-  delay = 5000,
+  delay = 3000,
   sizeClassName,
+  headingClassName,
 }) => {
   const swiperRef = useRef<any>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,16 +65,14 @@ const MasterSlider: React.FC<MasterSliderProps> = ({
             <img
               src={slide.image}
               alt={slide.title || `Slide ${index + 1}`}
-              className={`${sizeClassName}`}
+              className={`${sizeClassName} contrast-125`}
             />
-            <div className="overlay pointer-events-none absolute inset-0 -z-0 bg-gradient-to-b from-dark/40 to-dark/40" />
+            <div className="overlay pointer-events-none absolute inset-0 -z-0 bg-gradient-to-b from-dark/30 to-dark/30" />
 
             {hasContent && (
-              <div className="absolute mt-8 w-full space-y-2 px-8 text-center text-light">
+              <div className="pointer-events-none absolute mt-8 w-full space-y-2 px-8 text-center text-light">
                 {slide.title && (
-                  <h3 className="text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-9xl lg:leading-none">
-                    {slide.title}
-                  </h3>
+                  <h3 className={`${headingClassName}`}>{slide.title}</h3>
                 )}
                 {/* {slide.description && (
                   <p className="text-center text-sm text-dark/60">
@@ -83,7 +83,7 @@ const MasterSlider: React.FC<MasterSliderProps> = ({
             )}
           </SwiperSlide>
         ))}
-        <div className="absolute inset-0 z-20 flex size-full items-end justify-center p-12 text-light">
+        <div className="absolute inset-0 z-20 flex size-full items-end justify-center p-20 text-light">
           <SliderNavigation
             currentIndex={currentIndex}
             totalItems={slides.length}
