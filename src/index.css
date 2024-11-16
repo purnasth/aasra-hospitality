@@ -107,11 +107,13 @@ main:before {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  /* background-attachment: fixed; */
   z-index: -50;
   pointer-events: none;
+  /* filter: blur(10px); */
+  /* contrast: 1.5; */
 }
 main:before {
+  background-attachment: fixed;
   background-image: url('./assets/gradient/whitegradient.avif');
   opacity: 0.6;
 }

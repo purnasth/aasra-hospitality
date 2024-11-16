@@ -23,19 +23,19 @@ const Footer: React.FC = () => {
               </p>
             </div>
 
-            <div className="mx-auto max-w-5xl space-y-6 text-center md:px-12">
+            <div className="mt-7 mx-auto max-w-5xl space-y-6 text-center md:px-12">
               <span className="border border-light/50 px-4 py-1 uppercase opacity-80">
                 Awards
               </span>
-              <h6 className="text-xl leading-snug sm:text-2xl md:text-4xl lg:text-7xl lg:leading-snug">
+              <h6 className="text-xl leading-snug sm:text-2xl md:text-4xl lg:text-5xl lg:leading-snug">
                 24<sup>th</sup> years of service
               </h6>
-              <ul className="flex items-center justify-center gap-4">
+              <ul className="flex items-center justify-center gap-12">
                 <li>
                   <img
                     src="https://hotelhimalaya.purnashrestha.com.np/assets/sata_black-CGH8PUbu.webp"
                     alt=""
-                    className="aspect-square size-28 overflow-hidden object-contain p-2"
+                    className="aspect-square size-24 overflow-hidden object-contain"
                     draggable="false"
                   />
                 </li>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                   <img
                     src="https://satop100hospitalityawards.com/wp-content/uploads/2024/04/sml.png"
                     alt=""
-                    className="aspect-square size-28 overflow-hidden object-contain p-2"
+                    className="aspect-square size-24 overflow-hidden object-contain"
                     draggable="false"
                   />
                 </li>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   <img
                     src="https://www.hozpitality.com/themes/mytheme/img/Tourism_Leader_Round.png"
                     alt=""
-                    className="aspect-square size-28 overflow-hidden object-contain p-2"
+                    className="aspect-square size-24 overflow-hidden object-contain"
                     draggable="false"
                   />
                 </li>
