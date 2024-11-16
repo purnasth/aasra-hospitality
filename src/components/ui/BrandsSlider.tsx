@@ -1,6 +1,4 @@
 import React from 'react';
-import MasterSlider from './ui/MasterSlider';
-import BrandsSlider from './ui/BrandsSlider';
 
 const brands = [
   {
@@ -101,32 +99,21 @@ const brands = [
   },
 ];
 
-const Brands: React.FC = () => {
+const BrandsSlider: React.FC = () => {
   return (
     <>
-      <main className="px-0 pb-0">
-        <div className="container mb-16 text-center">
-          <span className="text-xl uppercase">Our brands across the globe</span>
-          <p className="mx-auto mt-6 max-w-4xl opacity-50">
-            Aasra Hospitality has a wide range of brands across the globe. We
-            employ over 600 associates at hotels throughout the United States,
-            located in popular destinations, including California, Oregon,
-            Washington, Alaska, and Utah.
-          </p>
-        </div>
-
-        <div className="relative my-12 overflow-x-hidden mix-blend-multiply">
-          <BrandsSlider />
-        </div>
-        <MasterSlider
-          slides={brands}
-          hasContent
-          sizeClassName="h-[110vh] w-full object-cover"
-          headingClassName="text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-9xl lg:leading-none"
-        />
-      </main>
+      <div className="ul animate-scroll flex w-max items-center gap-4 gap-y-4">
+        {brands.concat(brands).map((brand, index) => (
+          <img
+            key={index}
+            src={brand.logo}
+            alt={brand.title}
+            className="li size-24 object-contain p-2 transition-all duration-300 ease-linear hover:scale-110"
+          />
+        ))}
+      </div>
     </>
   );
 };
 
-export default Brands;
+export default BrandsSlider;

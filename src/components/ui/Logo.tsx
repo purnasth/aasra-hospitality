@@ -12,10 +12,10 @@ const Logo: React.FC<Props> = ({ aprops, className }) => {
     <Link
       to="/"
       className={aprops ? aprops : 'cursor-pointer'}
-      aria-label="Himalayan Flavours"
-      title="Himalayan Flavours"
+      aria-label="Aasra Hospitality"
+      title="Aasra Hospitality"
     >
-      <img src={logo} alt="Himalayan Flavours Logo" className={className} />
+      <img src={logo} alt="Aasra Hospitality Logo" className={className} />
     </Link>
   );
 };

@@ -22,19 +22,19 @@
     @apply text-light bg-dark;
   }
 
-  /* * {
+  * {
             scrollbar-width: thin;
-          } */
-  ::-webkit-scrollbar {
+          }
+  /* ::-webkit-scrollbar {
     @apply w-0;
-  }
+  } */
 
   body {
     @apply font-body;
   }
 
   main,
-  section {
+  section, footer {
     @apply font-body;
   }
 
@@ -65,7 +65,7 @@
     @apply font-body font-normal;
   }
 
-  main {
+  main, footer {
     @apply relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48;
   }
 
@@ -92,27 +92,32 @@
   .transition-1000 {
     @apply transition-all duration-1000;
   }
+
 }
 
-main {
-  position: relative;
-}
-
+footer::before,
 main:before {
-  content: ' ';
+  content: '';
   display: block;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
-  background-image: url('https://laviehospitality.com.np/wp-content/themes/starter/imagio_s/img/placeholder/Back00.webp');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
   z-index: -50;
+  pointer-events: none;
+}
+main:before {
+  background-image: url('./assets/gradient/whitegradient.avif');
+  opacity: 0.6;
+}
+footer::before {
+  background-image: url('./assets/gradient/blackgradient.avif');
+  opacity: 0.95;
 }
 
 ul:hover li:not(:hover) {
