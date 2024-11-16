@@ -12,18 +12,24 @@ import Home from './pages/Home';
 import useLenisScroll from './hooks/useLenisScroll';
 import WhatsApp from './components/ui/WhatsApp';
 import Footer from './layouts/Footer';
+import BackToTop from './components/ui/BackToTop';
+import GalleryPage from './pages/GalleryPage';
+import RouterToTop from './utils/RouterToTop';
 
 const App: React.FC = () => {
   useLenisScroll();
   return (
     <>
       <Router>
+        <RouterToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
+        <BackToTop />
         <WhatsApp />
       </Router>
     </>

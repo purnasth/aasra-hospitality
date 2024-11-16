@@ -29,26 +29,32 @@ const Footer: React.FC = () => {
             <h6 className="text-xl leading-snug sm:text-2xl md:text-4xl lg:text-7xl lg:leading-snug">
               24<sup>th</sup> years of service
             </h6>
-            <div className="flex items-center justify-center gap-4">
-              <img
-                src="https://hotelhimalaya.purnashrestha.com.np/assets/sata_black-CGH8PUbu.webp"
-                alt=""
-                className="aspect-square size-28 overflow-hidden object-contain p-2"
-                draggable="false"
-              />
-              <img
-                src="https://satop100hospitalityawards.com/wp-content/uploads/2024/04/sml.png"
-                alt=""
-                className="aspect-square size-28 overflow-hidden object-contain p-2"
-                draggable="false"
-              />
-              <img
-                src="https://www.hozpitality.com/themes/mytheme/img/Tourism_Leader_Round.png"
-                alt=""
-                className="aspect-square size-28 overflow-hidden object-contain p-2"
-                draggable="false"
-              />
-            </div>
+            <ul className="flex items-center justify-center gap-4">
+              <li>
+                <img
+                  src="https://hotelhimalaya.purnashrestha.com.np/assets/sata_black-CGH8PUbu.webp"
+                  alt=""
+                  className="aspect-square size-28 overflow-hidden object-contain p-2"
+                  draggable="false"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://satop100hospitalityawards.com/wp-content/uploads/2024/04/sml.png"
+                  alt=""
+                  className="aspect-square size-28 overflow-hidden object-contain p-2"
+                  draggable="false"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.hozpitality.com/themes/mytheme/img/Tourism_Leader_Round.png"
+                  alt=""
+                  className="aspect-square size-28 overflow-hidden object-contain p-2"
+                  draggable="false"
+                />
+              </li>
+            </ul>
           </div>
 
           <hr className="my-24 border-light/30" />

@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
           aprops={`transition-1000 pointer-events-auto object-contain rounded-xl origin-center
                ${visible ? 'scale-100' : 'scale-[0.6]'} ${applyBlendMode ? '' : ''}
             `}
-          className="transition-1000 h-16 w-auto flex-1 object-contain p-0 md:h-24"
+          className="transition-1000 h-16 w-auto flex-1 object-contain p-0 md:h-20"
         />
         <Link
           to="#"
@@ -117,18 +117,26 @@ const Navbar: React.FC = () => {
                   <NavLink
                     to={link.url}
                     className={({ isActive }) =>
-                      `navlink ${isActive ? 'text-orange-400' : 'text-dark'}`
+                      `navlink flex items-center gap-2 ${
+                        isActive ? 'text-black' : 'text-dark'
+                      }`
                     }
                     aria-label={link.title}
                   >
-                    {link.title}
-                    {/* <PiChefHatBold className="translate-x-4 rounded-full text-xl opacity-0 transition-all duration-300 group-hover:-translate-x-0 group-hover:opacity-100" /> */}
-
-                    <img
-                      src={favicon}
-                      alt="favicon"
-                      className="filter-black size-6 translate-x-4 rounded-full border border-dark/50 object-contain p-1 opacity-0 transition-all duration-300 group-hover:-translate-x-0 group-hover:opacity-100"
-                    />
+                    {({ isActive }) => (
+                      <>
+                        {link.title}
+                        <img
+                          src={favicon}
+                          alt="favicon"
+                          className={`filter-black size-6 translate-x-4 rounded-full border border-dark/50 object-contain p-1 transition-all duration-300 ${
+                            isActive
+                              ? '-translate-x-0 opacity-100'
+                              : 'opacity-0 group-hover:-translate-x-0 group-hover:opacity-100'
+                          }`}
+                        />
+                      </>
+                    )}
                   </NavLink>
                 </li>
               ))}

@@ -6,6 +6,7 @@ import Services from '../components/Services';
 import Nearby from '../components/ui/Nearby';
 import Brands from '../components/Brands';
 import Gallery from '../components/ui/Gallery';
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -103,7 +104,20 @@ const Home: React.FC = () => {
             hotels. We are always ready to serve you.
           </p>
         </div> */}
-        <Gallery galleryClassName="columns-1 sm:columns-2 lg:columns-3 gap-4" />
+        <Gallery
+          galleryClassName="columns-1 sm:columns-2 lg:columns-5 gap-4"
+          limit={20}
+        />
+        <div className="mt-12 flex flex-col items-center justify-center">
+          <div className="bottom-0 mx-auto h-10 w-px bg-dark/30 md:h-40"></div>
+          <Link
+            className="transition-1000 pointer-events-auto inline-flex items-center gap-2 border border-dark/50 px-6 py-2 text-dark shadow backdrop-blur-sm hover:bg-dark/20"
+            to="/gallery"
+            aria-label="View Full Gallery"
+          >
+            View Full Gallery
+          </Link>
+        </div>
       </main>
 
       <main className="bg-light px-0 pb-0">

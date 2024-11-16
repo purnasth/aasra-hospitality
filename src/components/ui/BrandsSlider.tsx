@@ -90,10 +90,10 @@ const brands = [
       'https://www.tucson-best-hotels.com/data/Pics/OriginalPhoto/15894/1589409/1589409493/pic-best-western-plus-intl-airport-hotel-suites-tucson-3.JPEG',
   },
   {
-    title: 'Roadway Inn & Suites',
+    title: 'Rodeway Inn & Suites',
     logo: 'https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1544738596315-CYQKTBC8M4YQD1WCP4HL/rodeway+inn.png?format=300w',
     description:
-      'Roadway Inn & Suites is a brand under the Aasra Hospitality company. Roadway Inn & Suites hotels are known for their comfortable rooms, free breakfast, and free high-speed internet. Roadway Inn & Suites hotels are perfect for business travelers and families.',
+      'Rodeway Inn & Suites is a brand under the Aasra Hospitality company. Rodeway Inn & Suites hotels are known for their comfortable rooms, free breakfast, and free high-speed internet. Rodeway Inn & Suites hotels are perfect for business travelers and families.',
     image:
       'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/e4/9f/4d/hotel-exterior.jpg?w=700&h=-1&s=1',
   },
