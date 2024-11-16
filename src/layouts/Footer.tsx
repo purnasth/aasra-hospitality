@@ -8,12 +8,12 @@ const year = new Date().getFullYear();
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="bg-dark px-4 py-24 text-light">
+      <footer className="bg-dark text-light">
         <div className="z-30">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="max-w-xl space-y-4">
-              <Logo className="filter-white transition-1000 h-16 w-auto flex-1 -translate-x-10 object-contain p-0 md:h-32" />
-              <p className="opacity-70">
+              <Logo className="filter-white transition-1000 mx-auto h-16 w-auto flex-1 object-contain p-0 md:mx-2 md:h-32 md:-translate-x-12" />
+              <p className="text-justify text-sm opacity-70 md:text-left md:text-base">
                 Aasra Hospitality is a privately owned, innovative hotel
                 development and hospitality management company. We manage a
                 portfolio of hotels across the United States and provide
@@ -23,11 +23,11 @@ const Footer: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-7 mx-auto max-w-5xl space-y-6 text-center md:px-12">
-              <span className="border border-light/50 px-4 py-1 uppercase opacity-80">
+            <div className="mx-auto mt-7 max-w-5xl space-y-6 text-center md:px-12">
+              <span className="border border-light/50 px-4 py-1 text-sm uppercase opacity-80 md:text-base">
                 Awards
               </span>
-              <h6 className="text-xl leading-snug sm:text-2xl md:text-4xl lg:text-5xl lg:leading-snug">
+              <h6 className="text-2xl leading-snug sm:text-2xl md:text-4xl lg:text-5xl lg:leading-snug">
                 24<sup>th</sup> years of service
               </h6>
               <ul className="flex items-center justify-center gap-12">
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                   <img
                     src="https://hotelhimalaya.purnashrestha.com.np/assets/sata_black-CGH8PUbu.webp"
                     alt=""
-                    className="aspect-square size-24 overflow-hidden object-contain"
+                    className="aspect-square size-16 md:size-24 overflow-hidden object-contain"
                     draggable="false"
                   />
                 </li>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                   <img
                     src="https://satop100hospitalityawards.com/wp-content/uploads/2024/04/sml.png"
                     alt=""
-                    className="aspect-square size-24 overflow-hidden object-contain"
+                    className="aspect-square size-16 md:size-24 overflow-hidden object-contain"
                     draggable="false"
                   />
                 </li>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   <img
                     src="https://www.hozpitality.com/themes/mytheme/img/Tourism_Leader_Round.png"
                     alt=""
-                    className="aspect-square size-24 overflow-hidden object-contain"
+                    className="aspect-square size-16 md:size-24 overflow-hidden object-contain"
                     draggable="false"
                   />
                 </li>
@@ -59,11 +59,11 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <hr className="my-24 border-light/30" />
+          <hr className="my-12 border-light/30 md:my-24" />
 
-          <div className="grid grid-cols-4 gap-12">
-            <div className="space-y-10 py-1">
-              <span className="border border-light/50 px-4 py-1 uppercase opacity-80">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-12">
+            <div className="space-y-5 py-1 md:space-y-10">
+              <span className="border border-light/50 px-4 py-1 text-sm uppercase opacity-80 md:text-base">
                 Contact Info
               </span>
               <ul className="flex flex-col items-start justify-start gap-1 text-center">
@@ -102,17 +102,19 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-span-3 space-y-10 overflow-hidden py-1">
-              <span className="border border-light/50 px-4 py-1 uppercase opacity-80">
+            <div className="col-span-3 space-y-5 overflow-hidden py-1 md:space-y-10">
+              <span className="border border-light/50 px-4 py-1 text-sm uppercase opacity-80 md:text-base">
                 Our Brands
               </span>
               <BrandsSlider />
             </div>
           </div>
 
-          <div className="mt-32 flex items-end justify-between text-lg">
+          <div className="mt-14 flex md:items-end justify-between flex-col md:flex-row text-base md:text-lg md:mt-32 gap-10">
             <div className="space-y-3">
-              <p>&copy; {year} Aasra Hospitality | All rights reserved |</p>
+              <p className="">
+                &copy; {year} Aasra Hospitality | All rights reserved |
+              </p>
               <p className="max-w-xl text-xs font-extralight text-light/70">
                 All logos, trademarks, and brands are property of their
                 respective owners. All company, product, and service names used
@@ -120,7 +122,7 @@ const Footer: React.FC = () => {
                 unauthorized use, reproduction or distribution of the content of
                 this website is subject to legal action.
               </p>
-              <ul className="policies flex gap-8 text-light">
+              <ul className="policies flex flex-wrap gap-y-2 gap-x-6 gap-8 text-light">
                 <li>
                   <Link
                     to="/privacy-policy"

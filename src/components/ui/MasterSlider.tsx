@@ -83,7 +83,7 @@ const MasterSlider: React.FC<MasterSliderProps> = ({
             )}
           </SwiperSlide>
         ))}
-        <div className="absolute inset-0 z-20 flex size-full items-end justify-center p-20">
+        <div className="absolute inset-0 z-20 flex size-full items-end justify-center p-6 md:p-20">
           <SliderNavigation
             currentIndex={currentIndex}
             totalItems={slides.length}

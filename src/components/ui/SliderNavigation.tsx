@@ -17,13 +17,13 @@ const SliderNavigation: React.FC<SliderNavigationProps> = ({
 }) => {
   return (
     <div className="z-10 flex items-center gap-8 text-white">
-      <button onClick={onPrev} aria-label="Previous" className="text-3xl hover:scale-x-125 transition-300 origin-right">
+      <button onClick={onPrev} aria-label="Previous" className="text-2xl md:text-3xl hover:scale-x-125 transition-300 origin-right">
         <TbArrowLeftRhombus />
       </button>
-      <span className="font-sans text-lg uppercase">
+      <span className="font-sans text-base md:text-lg uppercase">
         {currentIndex + 1} / {totalItems}
       </span>
-      <button onClick={onNext} aria-label="Next" className="text-3xl hover:scale-x-125 transition-300 origin-left">
+      <button onClick={onNext} aria-label="Next" className="text-2xl md:text-3xl hover:scale-x-125 transition-300 origin-left">
         <TbArrowRightRhombus />
       </button>
     </div>

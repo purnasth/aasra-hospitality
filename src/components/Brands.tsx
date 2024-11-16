@@ -105,9 +105,11 @@ const Brands: React.FC = () => {
   return (
     <>
       <main className="px-0 pb-0">
-        <div className="container mb-16 text-center">
-          <span className="text-xl uppercase">Our brands across the globe</span>
-          <p className="mx-auto mt-6 max-w-4xl opacity-50">
+        <div className="container mb-8 md:mb-16 text-center">
+          <span className="text-base uppercase md:text-xl">
+            Our brands across the globe
+          </span>
+          <p className="mx-auto mt-3 max-w-4xl text-sm opacity-50 md:mt-6 md:text-base text-justify md:text-center md:text-pretty">
             Aasra Hospitality has a wide range of brands across the globe. We
             employ over 600 associates at hotels throughout the United States,
             located in popular destinations, including California, Oregon,
@@ -115,14 +117,14 @@ const Brands: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative my-12 overflow-x-hidden mix-blend-multiply">
+        <div className="relative my-4 md:my-12 overflow-x-hidden mix-blend-multiply">
           <BrandsSlider />
         </div>
         <MasterSlider
           slides={brands}
           hasContent
-          sizeClassName="h-[110vh] w-full object-cover"
-          headingClassName="text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-9xl lg:leading-none"
+          sizeClassName="h-96 md:h-[110vh] w-full object-cover"
+          headingClassName="text-4xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-9xl lg:leading-none"
         />
       </main>
     </>

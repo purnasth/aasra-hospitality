@@ -33,17 +33,17 @@ const Home: React.FC = () => {
         <img
           src="https://images.squarespace-cdn.com/content/v1/5c0c1c25aa49a1a5bf355819/1547940792567-3OCRBEXVKTU1UYOEG8PD/image1.JPG?format=2500w"
           alt="Aasra Hospitality"
-          className="-z-10 h-[110vh] w-full object-cover object-top contrast-125"
+          className="-z-10 h-96 w-full object-cover object-top contrast-125 md:h-[110vh]"
         />
         <div className="overlay pointer-events-none absolute inset-0 -z-0 bg-gradient-to-b from-dark/40 to-transparent"></div>
       </main>
       <About />
-      <main className="flex w-full flex-col items-center justify-center gap-12 border-t border-dark/20">
-        <h1 className="max-w-5xl text-center text-8xl leading-tight">
+      <main className="flex w-full flex-col items-center justify-center gap-6 border-t border-dark/20 md:gap-12">
+        <h1 className="max-w-5xl text-4xl leading-snug md:text-center md:text-8xl md:leading-tight">
           Aasra Hospitality leading the Way in the Hospitality Industry
           Worldwide
         </h1>
-        <p className="max-w-2xl text-center text-base">
+        <p className="max-w-2xl text-justify text-base md:text-center">
           Founded by "Maninderjit Singh Bath" & "Ajayapal Singh Bath" in 2000.
           Aasra Hospitality is a privately owned, innovative hotel development
           and hospitality management company. We manage a portfolio of hotels
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
           development services, hotel management services, and hospitality
           career opportunities to our partners and associates.
         </p>
-        <p className="max-w-2xl text-center text-base">
+        <p className="max-w-2xl text-justify text-base md:text-center">
           Headquartered in Redding, CA our corporate staff provides complete
           services in both business development and hotel management. We employ
           over 600 associates at hotels throughout the United States, located in
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
       <main className="bg-light px-0 pb-0">
         <div className="container mb-16 text-center">
           <span className="text-xl">Aasra means 'King of Fame'</span>
-          <p className="mx-auto mt-6 max-w-4xl opacity-50">
+          <p className="mx-auto mt-6 max-w-4xl text-justify opacity-50 md:text-center">
             Aasra Hospitality has a vision to be the King of Fame in the
             hospitality industry. We have 100+ hotels across the world and we
             are growing. We have a team of 1000+ employees who are working hard
@@ -76,8 +76,8 @@ const Home: React.FC = () => {
         <MasterSlider
           slides={slides}
           hasContent
-          sizeClassName="h-[110vh] w-full object-cover"
-          headingClassName="text-white text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-7xl xl:text-8xl lg:leading-snug max-w-5xl mx-auto [text-shadow:_0_1px_10px_#00000080]"
+          sizeClassName="h-80 md:h-[110vh] w-full object-cover"
+          headingClassName="text-white text-3xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-7xl xl:text-8xl lg:leading-snug max-w-5xl mx-auto [text-shadow:_0_1px_10px_#00000080]"
         />
       </main>
 
@@ -87,12 +87,12 @@ const Home: React.FC = () => {
       <Brands />
 
       <main className="px-4">
-        <div className="mb-16 space-y-4">
-          <span className="uppercase opacity-60">
+        <div className="mb-8 md:mb-16 space-y-4">
+          <span className="uppercase opacity-60 text-sm md:text-base">
             Collection of our best memories.
           </span>
-          <h3 className="max-w-6xl text-pretty text-6xl leading-tight opacity-80">
-            We have a collection of photos of our hotels, events, and our team.
+          <h3 className="max-w-6xl text-pretty text-3xl md:text-6xl leading-tight opacity-80">
+            We have a collection of photos of our property, events & our team.
           </h3>
         </div>
         {/* <div className="mb-16 space-y-4 text-center">
@@ -108,8 +108,8 @@ const Home: React.FC = () => {
           galleryClassName="columns-1 sm:columns-2 lg:columns-5 gap-4"
           limit={20}
         />
-        <div className="mt-12 flex flex-col items-center justify-center">
-          <div className="bottom-0 mx-auto h-10 w-px bg-dark/30 md:h-40"></div>
+        <div className="flex flex-col items-center justify-center">
+          <div className="bottom-0 mx-auto h-16 w-px bg-dark/30 md:h-40"></div>
           <Link
             className="transition-1000 pointer-events-auto inline-flex items-center gap-2 border border-dark/50 px-6 py-2 text-dark shadow backdrop-blur-sm hover:bg-dark/20"
             to="/gallery"
@@ -121,9 +121,9 @@ const Home: React.FC = () => {
       </main>
 
       <main className="bg-light px-0 pb-0">
-        <div className="container mb-16 text-center">
+        <div className="container mb-8 md:mb-16 text-center">
           <span className="text-xl">Reach to Aasra Hospitality</span>
-          <p className="mx-auto mt-6 max-w-4xl opacity-50">
+          <p className="mx-auto mt-6 max-w-4xl opacity-50 text-justify md:text-center text-sm md:text-base">
             We are available 24/7 to help you. You can reach us by phone, email,
             or by visiting our office. We are located in Redding, CA. We are
             always ready to help you. Get direction to our office by clicking on

@@ -102,13 +102,13 @@ const brands = [
 const BrandsSlider: React.FC = () => {
   return (
     <>
-      <div className="ul animate-scroll flex w-max items-center gap-4 gap-y-4">
+      <div className="ul animate-scroll flex w-max items-center md:gap-4">
         {brands.concat(brands).map((brand, index) => (
           <img
             key={index}
             src={brand.logo}
             alt={brand.title}
-            className="li size-24 object-contain p-2 transition-all duration-300 ease-linear hover:scale-110"
+            className="li size-16 md:size-24 object-contain p-2 transition-all duration-300 ease-linear hover:scale-110"
           />
         ))}
       </div>

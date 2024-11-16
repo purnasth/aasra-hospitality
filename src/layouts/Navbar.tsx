@@ -46,12 +46,12 @@ const Navbar: React.FC = () => {
     <>
       <header
         className={`pointer-events-none fixed top-0 z-40 flex w-full items-center justify-between px-4 transition-all duration-1000 ease-in-out ${
-          visible ? 'h-24 border-b border-light/30' : 'h-16'
+          visible ? 'h-16 md:h-24 border-b border-light/30' : 'h-12 md:h-16'
         } ${applyBlendMode ? 'mix-blend-difference' : 'mix-blend-normal'} ${isHomePage ? 'mix-blend-normal' : 'mix-blend-difference'} transition-[mix-blend-mode] duration-500`}
       >
         <button
           onClick={toggleNav}
-          className="pointer-events-auto flex cursor-pointer items-center gap-2 border border-light/50 px-6 py-2 text-light backdrop-blur-sm transition-all duration-1000 hover:bg-dark/50"
+          className="pointer-events-auto flex cursor-pointer items-center gap-2 md:border border-light/50 p-0 md:px-6 md:py-2 text-light md:backdrop-blur-sm transition-all duration-1000 hover:bg-dark/50"
           title="Menu"
           aria-label="Menu"
           type="button"
@@ -65,7 +65,6 @@ const Navbar: React.FC = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              className="translate-y-[2px] scale-[0.85]"
               d="M21 18H2v2h19v-2zm-2-8v4H4v-4h15m1-2H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm1-4H2v2h19V4z"
             ></path>
           </svg>
@@ -75,21 +74,23 @@ const Navbar: React.FC = () => {
         </button>
         <Logo
           aprops={`transition-1000 pointer-events-auto object-contain rounded-xl origin-center
-               ${visible ? 'scale-100' : 'scale-[0.6]'} ${applyBlendMode ? '' : ''}
+               ${visible ? 'scale-100' : 'scale-75 md:scale-[0.6]'} ${applyBlendMode ? '' : ''}
             `}
-          className="transition-1000 h-16 w-auto flex-1 object-contain p-0 md:h-20"
+          className="transition-1000 h-10 w-auto flex-1 object-contain p-0 md:h-20"
         />
         <Link
           to="#"
-          className={`transition-1000 pointer-events-auto inline-flex items-center gap-2 border border-light/50 px-6 py-2 text-light shadow backdrop-blur-sm hover:bg-dark/50 ${
+          className={`transition-1000 pointer-events-auto inline-flex items-center gap-2 md:border border-light/50 p-0 md:px-6 md:py-2 text-light md:backdrop-blur-sm hover:bg-dark/50 ${
             visible ? 'scale-100' : ''
           }`}
           aria-label="Enquiry Now"
           title="Enquiry Now"
           target="_blank"
         >
-          Enquiry Now
-          <TbCalendarQuestion className="animate-bounce text-base" />
+          <span className="hidden select-none text-base md:block lg:text-base">
+            Enquiry Now
+          </span>
+          <TbCalendarQuestion className="md:animate-bounce text-2xl md:text-xl" />
         </Link>
       </header>
 
@@ -105,10 +106,10 @@ const Navbar: React.FC = () => {
           title="Close"
         >
           {/* Close */}
-          <IoClose className="text-2xl" />
+          <IoClose className="text-3xl" />
         </button>
 
-        <div className="justify -evenly flex size-full flex-col items-start gap-0 px-8 text-dark">
+        <div className="justify -evenly flex size-full flex-col items-start gap-0 px-4 md:px-8 text-dark">
           <div className="mt-12 w-full">
             <span className="text-xs uppercase text-dark/50">Navigation</span>
 
@@ -130,7 +131,7 @@ const Navbar: React.FC = () => {
                         <img
                           src={favicon}
                           alt="favicon"
-                          className={`filter-black size-6 translate-x-4 rounded-full border border-dark/50 object-contain p-1 transition-all duration-300 ${
+                          className={`filter-black size-6 translate-x-0 md:translate-x-4 rounded-full border border-dark/50 object-contain p-1 transition-all duration-300 ${
                             isActive
                               ? '-translate-x-0 opacity-100'
                               : 'opacity-0 group-hover:-translate-x-0 group-hover:opacity-100'

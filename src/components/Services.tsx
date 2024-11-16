@@ -30,11 +30,13 @@ const servicesContent = [
 const Services: React.FC = () => {
   return (
     <main className="border-y border-dark/20 bg-light">
-      <div className="grid grid-cols-5 gap-24">
-        <div className="sticky top-32 col-span-2 max-h-fit space-y-4">
-          <span className="uppercase opacity-60">What we do</span>
-          <h3 className="text-7xl">Aasra's Services</h3>
-          <p className="text-pretty opacity-80">
+      <div className="grid grid-cols-1 gap-y-16 md:grid-cols-5 md:gap-24">
+        <div className="top-32 space-y-4 md:sticky md:col-span-2 md:max-h-fit">
+          <span className="text-sm uppercase opacity-60 md:text-base">
+            What we do
+          </span>
+          <h3 className="text-4xl md:text-7xl">Aasra's Services</h3>
+          <p className="text-pretty text-sm opacity-80 md:text-base">
             Currently, our hotel portfolio is comprised of over 1900 guest rooms
             across multiple select-service, extended stay, mid-scale, and
             previously full-service hotel brands located in primary and
@@ -45,7 +47,7 @@ const Services: React.FC = () => {
           <div>
             <Link
               to="#"
-              className={`transition-1000 pointer-events-auto mt-12 inline-flex items-center gap-2 border border-dark/50 px-6 py-2 text-dark shadow backdrop-blur-sm hover:bg-dark/20`}
+              className={`transition-1000 pointer-events-auto mt-2 inline-flex items-center gap-2 border border-dark/50 px-6 py-2 text-dark shadow backdrop-blur-sm hover:bg-dark/20 md:mt-12`}
               aria-label="Meeting"
               target="_blank"
             >
@@ -54,21 +56,25 @@ const Services: React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className="col-span-3 space-y-32">
+        <div className="space-y-14 md:col-span-3 md:space-y-32">
           {servicesContent.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-4"
+              className="flex flex-col items-center justify-center gap-2 md:gap-4"
             >
               <img
                 src={service.image}
                 alt={service.title}
-                className="h-[32rem] w-full object-cover"
+                className="h-60 w-full object-cover md:h-[32rem]"
               />
               {/* <div className="mx-auto max-w-2xl -translate-y-1/2 space-y-5 bg-light p-8"> */}
-              <div className="space-y-5 py-5">
-                <h5 className="font-body text-4xl">{service.title}</h5>
-                <p className="text-pretty opacity-80">{service.description}</p>
+              <div className="space-y-2 py-2 md:py-5 md:space-y-5">
+                <h5 className="font-body text-2xl md:text-4xl">
+                  {service.title}
+                </h5>
+                <p className="text-pretty text-sm opacity-80 md:text-base">
+                  {service.description}
+                </p>
               </div>
             </div>
           ))}

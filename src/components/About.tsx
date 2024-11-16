@@ -28,12 +28,12 @@ const About: React.FC = () => {
             />
           </div>
         </div>
-        <div className="sticky top-0 flex max-h-fit flex-col items-center justify-center gap-4 text-center 2xl:gap-12">
-          <div className="bottom-0 h-10 w-px bg-dark/0 xl:h-40 2xl:h-40"></div>
-          <h3 className="mt-12 text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-6xl lg:leading-tight xl:text-8xl 2xl:text-8xl 2xl:leading-tight">
+        <div className="static md:sticky top-0 flex max-h-fit flex-col items-center justify-center gap-4 text-center 2xl:gap-12">
+          <div className="bottom-0 h-20 w-px bg-dark/30 md:bg-dark/0 xl:h-40 2xl:h-40"></div>
+          <h3 className="md:mt-12 text-4xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-6xl lg:leading-tight xl:text-8xl 2xl:text-8xl 2xl:leading-tight">
             Aasra Hospitality
           </h3>
-          <p className="mb-12 text-center text-sm text-dark/60 2xl:text-base">
+          <p className="md:mb-12 text-justify md:text-center text-sm text-dark/60 2xl:text-base">
             Aasra Hospitality is a privately owned, innovative hotel development
             and hospitality management company. We manage a portfolio of hotels
             across the United States and provide investor opportunities, hotel

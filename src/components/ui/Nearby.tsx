@@ -71,7 +71,7 @@ const Nearby: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <ul className="nearby-scroll sticky top-14 z-30 mb-12 flex max-w-full flex-nowrap items-start justify-start gap-3 overflow-x-auto pb-1">
+      <ul className="nearby-scroll sticky top-14 z-30 md:mb-12 flex max-w-full flex-nowrap items-start justify-start gap-3 overflow-x-auto pb-1">
         {nearbyLocations.map((location) => (
           <li
             key={location.name}
@@ -107,12 +107,12 @@ const Nearby: React.FC = () => {
         {isMapOpen && (
           <div
             id="mapSection"
-            className="relative w-full scroll-mt-32 rounded-lg md:scroll-mt-32 2xl:scroll-mt-32"
+            className="relative w-full scroll-mt-32 md:scroll-mt-32 2xl:scroll-mt-32"
           >
             <iframe
               title="Map"
               src={mapUrl}
-              className="h-64 w-full rounded-lg md:h-96 lg:h-[85vh]"
+              className="h-80 w-full md:h-96 lg:h-[85vh]"
               frameBorder="0"
             ></iframe>
           </div>
