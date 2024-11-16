@@ -82,7 +82,7 @@ const Nearby: React.FC = () => {
             aria-label={location.name}
             title="Get Direction"
           >
-            <span className="text-xs font-medium md:text-sm">
+            <span className="text-xs font-medium md:text-xs">
               {location.name}
             </span>
             <br />
