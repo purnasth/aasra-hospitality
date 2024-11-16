@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   return (
@@ -27,9 +28,9 @@ const About: React.FC = () => {
             />
           </div>
         </div>
-        <div className="sticky top-0 flex max-h-fit flex-col items-center gap-12 text-center">
-          <div className="bottom-0 h-10 w-px bg-dark/0 md:h-40"></div>
-          <h3 className="mt-0 text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-6xl lg:leading-snug xl:text-8xl 2xl:text-8xl 2xl:leading-normal">
+        <div className="sticky top-0 flex max-h-fit flex-col items-center justify-center gap-4 text-center 2xl:gap-12">
+          <div className="bottom-0 h-10 w-px bg-dark/0 xl:h-40 2xl:h-40"></div>
+          <h3 className="mt-12 text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-6xl lg:leading-tight xl:text-8xl 2xl:text-8xl 2xl:leading-tight">
             Aasra Hospitality
           </h3>
           <p className="mb-12 text-center text-sm text-dark/60 2xl:text-base">
@@ -39,6 +40,13 @@ const About: React.FC = () => {
             development services, hotel management services, and hospitality
             career opportunities to our partners and associates.
           </p>
+          {/* <Link
+            className="transition-1000 pointer-events-auto inline-flex items-center gap-2 border border-dark/50 px-6 py-2 text-dark shadow backdrop-blur-sm hover:bg-dark/20"
+            to="/about"
+            aria-label="Explore More"
+          >
+            Explore More
+          </Link> */}
         </div>
         <div className="mt-32 hidden space-y-24 pt-64 md:block">
           <div className="flex items-end justify-end">

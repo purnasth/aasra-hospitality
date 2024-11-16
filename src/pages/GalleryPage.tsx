@@ -1,6 +1,5 @@
 import React from 'react';
 import Gallery from '../components/ui/Gallery';
-import { Link } from 'react-router-dom';
 
 const GalleryPage: React.FC = () => {
   return (

@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
   const [visible, setVisible] = useState(true);
   const [applyBlendMode, setApplyBlendMode] = useState(false);
   const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +47,7 @@ const Navbar: React.FC = () => {
       <header
         className={`pointer-events-none fixed top-0 z-40 flex w-full items-center justify-between px-4 transition-all duration-1000 ease-in-out ${
           visible ? 'h-24 border-b border-light/30' : 'h-16'
-        } ${applyBlendMode ? 'mix-blend-difference' : 'mix-blend-normal'} transition-[mix-blend-mode] duration-500`}
+        } ${applyBlendMode ? 'mix-blend-difference' : 'mix-blend-normal'} ${isHomePage ? 'mix-blend-normal' : 'mix-blend-difference'} transition-[mix-blend-mode] duration-500`}
       >
         <button
           onClick={toggleNav}
