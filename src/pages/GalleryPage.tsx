@@ -14,7 +14,7 @@ const GalleryPage: React.FC = () => {
       </div> */}
       <div className="mb-16 space-y-4 text-center">
         <span className="uppercase opacity-60">Glimpse of Memories</span>
-        <h3 className="text-7xl">Aasra's Gallery</h3>
+        <h3 className="text-8xl">Aasra's Gallery</h3>
         <p className="mx-auto max-w-xl text-pretty opacity-80">
           Collection of our best memories. We have a collection of photos of our
           hotels, events, and our team. We are proud of our team and our hotels.

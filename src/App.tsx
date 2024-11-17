@@ -15,6 +15,7 @@ import Footer from './layouts/Footer';
 import BackToTop from './components/ui/BackToTop';
 import GalleryPage from './pages/GalleryPage';
 import RouterToTop from './utils/RouterToTop';
+import AboutPage from './pages/AboutPage';
 
 const App: React.FC = () => {
   useLenisScroll();
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
