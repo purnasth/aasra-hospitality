@@ -16,6 +16,7 @@ import BackToTop from './components/ui/BackToTop';
 import GalleryPage from './pages/GalleryPage';
 import RouterToTop from './utils/RouterToTop';
 import AboutPage from './pages/AboutPage';
+import NearbyPage from './pages/NearbyPage';
 
 const App: React.FC = () => {
   useLenisScroll();
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/nearby-attractions" element={<NearbyPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

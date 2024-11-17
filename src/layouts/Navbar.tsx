@@ -6,7 +6,7 @@ import { IoClose } from 'react-icons/io5';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import Logo from '../components/ui/Logo';
 import favicon from '../assets/favicon.png';
-import { FaLinkedinIn } from 'react-icons/fa';
+// import { FaLinkedinIn } from 'react-icons/fa';
 
 const navLinks = [
   // { id: 1, title: 'About', url: '/about' },
@@ -161,9 +161,9 @@ const Navbar: React.FC = () => {
                     className="inline-block text-base hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="536 East Cypress Redding, California"
+                    aria-label="536 East Cypress Redding, California, USA"
                   >
-                    536 East Cypress Redding, California
+                    536 East Cypress Redding, California, USA
                   </a>
                 </li>
                 <li>

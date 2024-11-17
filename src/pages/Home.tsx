@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 // import AboutDetails from '../components/AboutDetails';
 import AboutAasra from '../components/AboutAasra';
 import MD from '../components/ui/MD';
+import NearbyAttractions from '../components/ui/NearbyAttractions';
 
 const Home: React.FC = () => {
   return (
@@ -80,6 +81,20 @@ const Home: React.FC = () => {
           </p>
         </div>
         <Nearby />
+        <div className="flex flex-col items-center justify-center">
+          <div className="bottom-0 mx-auto h-16 w-px bg-dark/30 md:h-40"></div>
+          <Link
+            className="transition-1000 pointer-events-auto inline-flex items-center gap-2 border border-dark/50 px-6 py-2 text-dark shadow backdrop-blur-sm hover:bg-dark/20"
+            to="/nearby-attractions"
+            aria-label="Explore the beauty of California near Aasra Hospitality"
+          >
+            Explore the beauty of California near Aasra Hospitality
+          </Link>
+        </div>
+        {/* <h3 className="mb-0 mt-12 text-center text-8xl">Nearby Attractions</h3> */}
+        <main className="bg-light pt-16">
+          <NearbyAttractions limit={2} />
+        </main>
       </main>
     </>
   );

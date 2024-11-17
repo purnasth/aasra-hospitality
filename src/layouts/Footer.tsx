@@ -73,9 +73,9 @@ const Footer: React.FC = () => {
                     className="inline-block text-sm hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="536 East Cypress Redding, California"
+                    aria-label="536 East Cypress Redding, California, USA"
                   >
-                    536 East Cypress Redding, California
+                    536 East Cypress Redding, California, USA
                   </a>
                 </li>
                 <li>
